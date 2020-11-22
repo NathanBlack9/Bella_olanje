@@ -9,13 +9,13 @@ const cleanCSS = require('gulp-clean-css');
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "src"
+            baseDir: "./"
         }
     });
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/scss/*.+(scss|sass)")
+    return gulp.src("scss/*.+(scss|sass)")
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(rename({
                 prefix: "",
@@ -26,13 +26,13 @@ gulp.task('styles', function() {
                 cascade: false
             }))//префиксы где нужно
             .pipe(cleanCSS({compatibility: 'ie8'}))//очищается css
-            .pipe(gulp.dest("src/css"))//вывод в .css
+            .pipe(gulp.dest("css"))//вывод в .css
             .pipe(browserSync.stream());//обновление стр
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/scss/*.+(scss|sass)", gulp.parallel('styles'), browserSync.reload);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("scss/*.+(scss|sass)", gulp.parallel('styles'), browserSync.reload);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
