@@ -1,0 +1,30 @@
+.footer{
+    &__inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 54px 0 68px 0;
+    }
+    &__item{
+        margin:auto 0;
+        &:last-child{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: 0.1px;
+            color: #5C5C5C;
+        }
+    }
+    &__social_icons{
+        @include TransitionMix;
+        &:hover{
+            filter:grayscale(0.3);
+        }
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+    }
+}

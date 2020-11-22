@@ -1,0 +1,31 @@
+.header{
+    min-height: 156px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+        padding: 27px 0;
+    }
+    .nav{
+        margin: auto 0;
+        &__link{
+            text-decoration: none;
+            color: $black;
+            margin-right: 114px;
+            @include TransitionMix;
+
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover,
+            &:focus{
+                color: $orange;
+            }
+        }
+    }
+}

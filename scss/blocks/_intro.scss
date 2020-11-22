@@ -1,0 +1,73 @@
+.intro{
+    width: 100%;
+    min-height: 619px;
+    background: url('../img/intro-bg.svg') center (center/cover) no-repeat fixed;
+    &__inner{
+        text-align: center;
+        color: white;
+        padding: 73px 0 162px 0;
+        z-index: 2;
+        position: relative;
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 80px;
+            letter-spacing: 0.2px;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            color: #F7F7F7;
+            letter-spacing: 0.1px;
+            &:first-child{
+                margin-bottom: 7px;
+            }
+            &:last-child{
+                font-weight: 500;
+                line-height: 38px;
+                letter-spacing: 0.2px;
+                margin-top: 7px;
+            }
+        }
+
+    }
+    &__btns{
+        margin-top: 54px;
+        display: flex;
+        justify-content: center;
+        .btn{
+            @include btn(16px,57px,30px,$orange);
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0.1px;
+            border: 1px solid $orange;
+            @include TransitionMix;
+
+            &:nth-child(2){
+                @include btn(16px,57px,30px,transparent);
+                border: 1px solid white;
+                margin-left: 34px;
+            }
+
+            &:hover{
+                background-color: transparent;
+                border-color: $orange;
+                color: $orange;
+            }
+        }
+    }
+}
+.phones{
+    width: 100%;
+    min-height: 575px;
+    position: relative;
+    img{
+        position: absolute;
+        top: 130px;
+        left: 46%;
+        transform: translate(-50%, -50%);
+    }
+} 

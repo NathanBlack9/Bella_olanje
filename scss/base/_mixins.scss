@@ -1,0 +1,17 @@
+@mixin TransitionMix {
+ -webkit-transition: all .15s linear; /* Safari and Chrome */
+    -moz-transition: all .15s linear; /* Firefox 4 */
+      -o-transition: all .15s linear; /* Opera */
+         transition: all .15s linear;
+  }
+
+@mixin btn($ptb, $plr, $br, $bgc){
+   border-radius: $br;
+   background-color: $bgc;
+   padding: $ptb $plr;
+   text-decoration: none;
+   color: white;
+
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+}
