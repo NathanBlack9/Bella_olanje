@@ -1,0 +1,42 @@
+@media screen and (max-width:1200px){
+    .nav__link:not(:last-child){
+        margin-right: 80px;
+    }
+    .work__subtitle{
+        width: auto;
+    }
+}
+@media screen and (max-width:1100px){
+    .intro__inner h1{
+        font-size: 51px;
+    }
+    .intro__btns .btn{
+        font-size: 20px;
+    }
+    .create,
+    .explore{
+        padding: 0 40px;
+    }
+    .footer__inner{
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:1000px){
+    @include burger;
+    .nav{
+        margin: 0;
+        &__link:not(:last-child){
+            margin-right: 0;
+        }
+    }
+    .header__inner{
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
+    .app-work__title{
+        width: 600px;
+    }
+    .footer__inner{
+        padding: 18px 0;
+    }
+}
