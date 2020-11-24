@@ -29,7 +29,7 @@
         flex-direction: row;
         justify-content: center;
         .btn{
-            @include TransitionMix;
+            @include TransitionMix(.15s);
             @include btn(17px,30px,10px,$orange);
             border: 1px solid $orange;
             &:hover{

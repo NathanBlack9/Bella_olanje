@@ -1,8 +1,8 @@
-@mixin TransitionMix {
- -webkit-transition: all .15s linear; /* Safari and Chrome */
-    -moz-transition: all .15s linear; /* Firefox 4 */
-      -o-transition: all .15s linear; /* Opera */
-         transition: all .15s linear;
+@mixin TransitionMix($delay) {
+ -webkit-transition: all $delay linear; /* Safari and Chrome */
+    -moz-transition: all $delay linear; /* Firefox 4 */
+      -o-transition: all $delay linear; /* Opera */
+         transition: all $delay linear;
   }
 
 @mixin btn($ptb, $plr, $br, $bgc){
@@ -43,9 +43,9 @@
     .menu__btn {
       display: flex;
       align-items: center;
-      position: fixed;
+      position: absolute;
       top: 70px;
-      right: 25px;
+      right: 40px;
 
       width: 26px;
       height: 26px;

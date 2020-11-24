@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 619px;
     background: url('../img/intro-bg.svg') center (center/cover) no-repeat fixed;
-    padding-top: 165px;
+    // padding-top: 165px;
     &__inner{
         text-align: center;
         color: white;
@@ -45,7 +45,7 @@
             line-height: 36px;
             letter-spacing: 0.1px;
             border: 1px solid $orange;
-            @include TransitionMix;
+            @include TransitionMix(.15s);
 
             &:nth-child(2){
                 @include btn(16px,57px,30px,transparent);

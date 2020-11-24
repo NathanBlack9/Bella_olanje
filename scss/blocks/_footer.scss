@@ -19,7 +19,7 @@
         }
     }
     &__social_icons{
-        @include TransitionMix;
+        @include TransitionMix(.15s);
         &:hover{
             filter:grayscale(0.3);
         }

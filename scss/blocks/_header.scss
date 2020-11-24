@@ -7,11 +7,18 @@
     line-height: 28px;
     letter-spacing: 0.2px;
 
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    z-index: 9999;
-    border-bottom: 2px solid $orange;
+    @include TransitionMix(.3s);
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        min-height: auto;
+        background-color: white;
+        z-index: 9999;
+        border-bottom: 2px solid $orange;
+    }
+    &.fixed &__inner{
+        padding: 0;
+    }
     &__inner{
         display: flex;
         justify-content: space-around;
@@ -23,7 +30,7 @@
             text-decoration: none;
             color: $black;
             margin-right: 114px;
-            @include TransitionMix;
+            @include TransitionMix(.15s);
 
             &:last-child{
                 margin-right: 0;
