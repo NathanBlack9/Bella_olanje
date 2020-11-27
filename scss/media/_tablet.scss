@@ -1,0 +1,115 @@
+/*Media 900, 768, 630*/
+
+@media screen and (max-width:900px){    
+    .intro .container{
+        padding: 0 20px;
+    }
+    .phones img{
+        top:160px;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .intro{
+        &__inner{
+            & h1{
+                font-size: 46px;
+                line-height: 55px;
+            }
+            & p{
+                font-size: 22px;
+            }
+        }
+        &__btns .btn{
+            font-size: 17px;
+        }
+    }
+    .app-work__title{
+        font-size: 40px;
+    }
+    .work{
+        &__subtitle{
+            font-size: 35px;
+        }
+        &__description{
+            font-size: 21px;
+        }
+    }
+    .create,
+    .explore{
+        margin-bottom: 50px;
+    }
+    .create:last-child{
+        margin-bottom: 90px;
+    }
+    .download{
+        min-width: auto;
+        min-height: auto;
+        &__inner{
+            padding: 90px 70px;
+        }
+    }
+
+    .footer{
+        &__inner{
+            padding: 40px 0;
+            flex-direction: column;
+        }
+        &__item{
+            text-align: center;
+            &:last-child{
+                text-align: center;
+                margin-top: 10px;
+            }
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+    .app-work{
+        &__title{
+            margin-bottom: 80px;
+        }
+    }
+}    
+@media screen and (max-width:630px){
+    .create img{
+        &:first-child{
+           width: 230px;
+        }
+        &:last-child{
+            width: 220px;
+        }
+    }
+    .explore img{
+        width: 215px;
+    }
+    .app-work__title {
+        width: 387px;
+    }
+    .work{
+        &__title{
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        &__subtitle{
+            font-size: 28px;
+            line-height: 42px;
+            margin-bottom: 0;
+        }
+        &__description{
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+    .download{
+        &__title{
+            line-height: 50px;
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+    }    
+}

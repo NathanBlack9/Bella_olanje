@@ -1,17 +1,17 @@
 let header = document.querySelector("#header");
-let headerHeight = header.offsetHeight;
+// let headerHeight = header.offsetHeight;
 let scrollPos = window.scrollY;
 
-checkScroll(scrollPos,headerHeight);
+checkScroll(scrollPos);
 
 window.addEventListener('scroll', () => {
-    headerHeight = header.offsetHeight;
+    // headerHeight = header.offsetHeight;
     scrollPos = this.scrollY;
-    checkScroll(scrollPos,headerHeight);
+    checkScroll(scrollPos);
 });
 
-function checkScroll(scrollPos,headerHeight) {
-    if( scrollPos > headerHeight){
+function checkScroll(scrollPos) {
+    if( scrollPos > 0){
         header.classList.add('fixed');
     }else{
         header.classList.remove('fixed');

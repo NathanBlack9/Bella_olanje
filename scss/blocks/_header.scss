@@ -14,13 +14,14 @@
         min-height: auto;
         background-color: white;
         z-index: 9999;
-        border-bottom: 2px solid $orange;
+        box-shadow: 0 0 10px rgba($black,.5);
     }
     &.fixed &__inner{
         padding: 0;
     }
     &__inner{
         display: flex;
+        position: relative;
         justify-content: space-around;
         padding: 27px 0;
     }

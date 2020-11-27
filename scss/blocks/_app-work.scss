@@ -17,7 +17,7 @@
 
 .create{
     display: flex;
-    width: 100%;
+    width: 100%; 
     align-items: center;
     margin-bottom: 145px;
     &__img{
@@ -25,7 +25,7 @@
         filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
     }
     &__text{
-        width: 50%;
+        width: 50%; 
     }
     &:last-child{
         margin-bottom: 162px;
@@ -48,7 +48,7 @@
     font-size: 40px;
     line-height: 57px;
     letter-spacing: 0.2px;
-    color: #252B42;
+    color: $black;
     margin-bottom: 17px;
     width: 595px;
 }
@@ -58,7 +58,7 @@
     font-size: 24px;
     line-height: 38px;
     letter-spacing: 0.2px;
-    color: #737373;
+    color: $subBlack;
 }
 /*------------------*/
 
