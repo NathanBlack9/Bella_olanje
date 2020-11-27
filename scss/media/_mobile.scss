@@ -3,9 +3,9 @@
 @media screen and (max-width:560px){
     .intro{
         background: white;
-        min-height: 570px;
+        min-height: 560px;
         &__inner{
-            padding-bottom: 100px;
+            padding-bottom: 0;
             padding-top: 40px;
             p{
                 color: $subBlack;
@@ -32,7 +32,7 @@
     }
     .phones{
         min-height: 660px;
-        background: url('../img/intro_phones_mobile.svg') 0 55% /cover no-repeat;
+        background: url('../../img/intro_phones.svg') -50px 55% /cover no-repeat;
         img{
             display: none;
         }
@@ -100,9 +100,6 @@
 }
 @media screen and (max-width:455px){
     .intro{
-        &__inner{
-            padding-bottom: 0;
-        }
         &__btns {
             flex-direction: column;
             max-width: 240px;
@@ -115,6 +112,9 @@
                 margin-top: 17px;
             }
         }
+    }
+    .phones{
+       background: url(../../img/intro_phones.svg) 100% 55%/cover no-repeat;
     }
     .download__btns{
         flex-direction: column;
